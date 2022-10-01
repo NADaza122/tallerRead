@@ -1,0 +1,598 @@
+/*ESTILOS NAV*/
+
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+:root{
+    --azulclaro: #48D6ED;
+    --azuloscuro: rgb(51, 122, 183);
+    --azulnegro: #303342;
+    --negro: rgb(51, 51, 51);
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: rgb(21, 122, 138);
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, rgb(11, 56, 96) 80.34%);  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+
+
+/*FLEXBOX RESPONSIVE*/
+
+/*RESOLUCION MOBILE*/
+@media screen and (min-width: 320px){
+    .respmenu a {
+        font-family: "Marcellus", serif;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+        border-bottom: none;
+        max-width: 200px;
+        background-color: none;
+    }
+    
+    .respmenu img{
+        width: 40%;
+        max-width: 200px;
+    }
+    
+    .respmenu input[type="checkbox"], .respmenu .fa-bars{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        right: 2%;
+        top: 15%;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .respmenu .fa-times{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        right: 2%;
+        top: 5%;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .respmenu .fa-bars, .respmenu .fa-times {
+        font-size: 42px;
+        pointer-events: none;
+    }
+    
+    .respmenu input[type="checkbox"] {
+        opacity: 0;
+    }
+    
+    .respmenu {
+        color: white;
+        position: relative;
+        background-color: var(--negro2);
+        min-height: 30px;
+    }
+    
+    .respmenu nav {
+        display: none;
+    }
+    
+    .respmenu input:checked ~ nav {
+        display: block;
+    }
+    
+    .respmenu input:checked ~ .fa-bars {
+        display: none;
+    }
+    
+    .respmenu input:not(:checked) ~ .fa-times {
+        display: none;
+    }
+    
+    .menu li{
+        text-decoration: none;
+    }
+    
+    nav{
+        font-size: 20px;
+        background-color: #000;
+        font-family: 'Marcellus', serif;
+        color: #fff;
+    }
+    
+    nav i{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    
+    .logo img{
+        width: 45%;
+        max-width: 200px;
+    }
+    
+    .logo{
+        background-color: var(--negro2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    
+    .menu{
+        background-color: rgba(35, 46, 95, 0.966);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+    
+    .menu-hr{
+        width: 90%;
+        background-color: var(--blanco);
+    }
+    
+    .item{
+        padding: 1rem;
+    }
+    
+    nav a{
+        color: var(--blanco);
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    nav a:hover{
+        background-color: #195181;
+        width: 100%;
+    }
+    
+    .navbar-button{
+        background-color:transparent;
+        border: none;
+        border-radius: 3px;
+        font-size: 1em;
+        padding: 0.5rem;
+        font-family: "Marcellus", serif;
+        color: var(--blanco);
+    }
+}
+
+
+/*RESOLUCION TABLET*/
+@media screen and (min-width: 768px){
+    .respmenu a {
+        font-family: "Marcellus", serif;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        padding: 10px 20px;
+        border-bottom: none;
+        max-width: 200px;
+        background-color: none;
+    }
+    
+    .respmenu img{
+        width: 40%;
+        max-width: 200px;
+    }
+    
+    .respmenu input[type="checkbox"], .respmenu .fa-bars{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        right: 2%;
+        top: 15%;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .respmenu .fa-times{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        right: 2%;
+        top: 5%;
+        width: 45px;
+        height: 45px;
+    }
+    
+    .respmenu .fa-bars, .respmenu .fa-times {
+        font-size: 42px;
+        pointer-events: none;
+    }
+    
+    .respmenu input[type="checkbox"] {
+        opacity: 0;
+    }
+    
+    .respmenu {
+        color: white;
+        position: relative;
+        background-color: var(--negro2);
+        min-height: 30px;
+    }
+    
+    .respmenu nav {
+        display: none;
+    }
+    
+    .respmenu input:checked ~ nav {
+        display: block;
+    }
+    
+    .respmenu input:checked ~ .fa-bars {
+        display: none;
+    }
+    
+    .respmenu input:not(:checked) ~ .fa-times {
+        display: none;
+    }
+    
+    .menu li{
+        text-decoration: none;
+    }
+    
+    nav{
+        font-size: 20px;
+        background-color: #000;
+        font-family: 'Marcellus', serif;
+        color: #fff;
+    }
+    
+    nav i{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    
+    .logo img{
+        width: 45%;
+        max-width: 200px;
+    }
+    
+    .logo{
+        background-color: var(--negro2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    
+    .menu{
+        background-color: rgba(35, 46, 95, 0.966);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center; 
+    }
+    
+    .menu-hr{
+        width: 90%;
+        background-color: var(--blanco);
+    }
+    
+    .item{
+        padding: 1rem;
+    }
+    
+    nav a{
+        color: var(--blanco);
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    nav a:hover{
+        background-color: #195181;
+        width: 100%;
+    }
+    
+    .navbar-button{
+        background-color:transparent;
+        border: none;
+        border-radius: 3px;
+        font-size: 1em;
+        padding: 0.5rem;
+        font-family: "Marcellus", serif;
+        color: var(--blanco);
+    }
+    
+}
+
+
+
+/*RESOLUCION NOTEBOOK*/
+@media screen and (min-width: 1024px){
+    .respmenu a {
+        padding: 0.5rem;
+        font-family: "Marcellus", serif;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        border-bottom: none;
+        max-width: 200px;
+        background-color: none;
+    }
+    
+    .respmenu img{
+        width: 40%;
+        max-width: 200px;
+    }
+    
+    .respmenu input[type="checkbox"]{
+        display: none;
+    }
+    
+    .respmenu .fa-bars{
+        display: none;
+    }
+    
+    .respmenu .fa-times{ 
+        display: none; 
+    
+    }
+    
+    .respmenu .fa-bars, .respmenu .fa-times {
+        display: none;
+    }
+    
+    .respmenu input[type="checkbox"] {
+        display: none;
+    }
+    
+    .respmenu {
+        color: white;
+        position: relative;
+        background-color: var(--negro2);
+        min-height: 30px;
+    }
+    
+    .respmenu nav {
+        width: 100%;
+        background-color:  rgba(35, 46, 95, 0.966);
+        font-family: 'Marcellus', serif;
+        display: flex;
+        align-items: center;
+        font-size: 1.3em;
+        padding: 0.5rem;
+    }
+    
+    .respmenu input:checked ~ nav {
+        display: block;
+    }
+    
+    .respmenu input:checked ~ .fa-bars {
+        display: none;
+    }
+    
+    .respmenu input:not(:checked) ~ .fa-times {
+        display: none;
+    }
+    
+    .menu li{
+        text-decoration: none;
+    }
+    
+    nav{
+        font-size: 20px;
+        background-color: #000;
+        font-family: 'Marcellus', serif;
+        color: #fff;
+    }
+    
+    nav i{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    
+    .logo img{
+        width: 45%;
+        max-width: 200px;
+    }
+    
+    .logo{
+        background-color: var(--negro2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    
+    .menu{
+        cursor: pointer;
+        margin-left: 65%;
+        width: 100%;
+        background-color: rgba(35, 46, 95, 0.966);
+        display: flex;
+        flex-direction: row;
+        justify-content: none;
+    }
+    
+    .menu-hr{
+        display: none;
+    }
+    
+    .item{
+        padding: 1rem;
+    }
+    
+    nav a{
+        color: var(--blanco);
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    nav a:hover{
+        background-color: #195181;
+        width: 100%;
+    }
+    
+    .navbar-button{
+        background-color: #337AB7;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        padding: none;
+        font-family: "Marcellus", serif;
+        color: var(--blanco);
+    }
+}
+
+
+/*RESOLUCION DESKTOP*/
+@media screen and (min-width: 1328px){
+    .respmenu a {
+        padding: 0.5rem;
+        font-family: "Marcellus", serif;
+        text-align: center;
+        color: #fff;
+        text-decoration: none;
+        display: block;
+        border-bottom: none;
+        max-width: 200px;
+        background-color: none;
+    }
+    
+    .respmenu img{
+        width: 40%;
+        max-width: 200px;
+    }
+    
+    .respmenu input[type="checkbox"]{
+        display: none;
+    }
+    
+    .respmenu .fa-bars{
+        display: none;
+    }
+    
+    .respmenu .fa-times{ 
+        display: none; 
+    
+    }
+    
+    .respmenu .fa-bars, .respmenu .fa-times {
+        display: none;
+    }
+    
+    .respmenu input[type="checkbox"] {
+        display: none;
+    }
+    
+    .respmenu {
+        color: white;
+        position: relative;
+        background-color: var(--negro2);
+        min-height: 30px;
+    }
+    
+    .respmenu nav {
+        width: 100%;
+        background-color:  rgba(35, 46, 95, 0.966);
+        font-family: 'Marcellus', serif;
+        display: flex;
+        align-items: center;
+        font-size: 1.7em;
+        padding: 0.5rem;
+    }
+    
+    .respmenu input:checked ~ nav {
+        display: block;
+    }
+    
+    .respmenu input:checked ~ .fa-bars {
+        display: none;
+    }
+    
+    .respmenu input:not(:checked) ~ .fa-times {
+        display: none;
+    }
+    
+    .menu li{
+        text-decoration: none;
+    }
+    
+    nav{
+        font-size: 20px;
+        background-color: #000;
+        font-family: 'Marcellus', serif;
+        color: #fff;
+    }
+    
+    nav i{
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    
+    .logo img{
+        width: 45%;
+        max-width: 200px;
+    }
+    
+    .logo{
+        background-color: var(--negro2);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem;
+    }
+    
+    .menu{
+        cursor: pointer;
+        margin-left: 70%;
+        width: 100%;
+        background-color: rgba(35, 46, 95, 0.966);
+        display: flex;
+        flex-direction: row;
+        justify-content: none;
+    }
+    
+    .menu-hr{
+        display: none;
+    }
+    
+    .item{
+        padding: 1rem;
+    }
+    
+    nav a{
+        color: var(--blanco);
+        text-decoration: none;
+        text-align: center;
+    }
+    
+    nav a:hover{
+        background-color: #195181;
+        width: 100%;
+    }
+    
+    .navbar-button{
+        background-color: #337AB7;
+        border: none;
+        border-radius: 5px;
+        font-size: 1em;
+        padding: none;
+        font-family: "Marcellus", serif;
+        color: var(--blanco);
+    }
+    
+}

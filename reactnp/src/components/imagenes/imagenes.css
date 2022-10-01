@@ -1,0 +1,189 @@
+/*ESTILOS DESCRIPCION IMAGEN*/
+@import url('./fondo.jpg');
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --azulclaro: #48D6ED;
+    --azuloscuro: rgb(51, 122, 183);
+    --azulnegro: #303342;
+    --negro: rgb(51, 51, 51);
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: rgb(21, 122, 138);
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, rgb(11, 56, 96) 80.34%);  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+
+
+/*FLEXBOX RESPONSIVE*/
+
+/*RESOLUCION MOBILE*/
+@media screen and (min-width: 320px){
+/*IMAGENSLIDER*/
+.contendordescripcion{
+    background:rgba(0, 0, 0, 0.479) ;
+    padding: 10px 20px 30px 20px;
+    width: 100%;
+    height: 20%;
+}
+
+.imagen img{
+    height: 26rem;
+}
+
+.descrpcion--img{
+    height: 19rem;
+    opacity: 2;
+    color: #fff;
+}
+
+.descripcion{
+    background: url('./fondo.jpg') no-repeat;   
+    background-size: cover;
+    align-items: flex-end;
+    padding: 9px; 
+    display:flex;
+    height: 78vh;
+}
+
+}
+
+
+
+/*RESOLUCION TABLET*/
+@media screen and (min-width: 768px){
+/*IMAGENSLIDER*/
+.contendordescripcion{
+    background:rgba(0, 0, 0, 0.479) ;
+    padding: 10px 20px 30px 20px;
+    width: 100%;
+    height: 20%;
+}
+
+.imagen img{
+    height: 26rem;
+}
+
+.descrpcion--img{
+    height: 19rem;
+    opacity: 2;
+    color: #fff;
+}
+
+.descripcion{
+    background: url('../img/fondo.jpg') no-repeat;   
+    background-size: cover;
+    align-items: flex-end;
+    padding: 9px; 
+    display:flex;
+    height: 78vh;
+}
+}
+
+
+
+/*RESOLUCION NOTEBOOK*/
+@media screen and (min-width: 1024px){
+/*IMAGENSLIDER*/
+.contendordescripcion{
+    background:rgba(0, 0, 0, 0.479) ;
+    padding: 10px 20px 30px 20px;
+    width: 100%;
+    height: 20%;
+}
+
+.imagen img{
+    height: 26rem;
+}
+
+.descrpcion--img{
+    height: 19rem;
+    opacity: 2;
+    color: #fff;
+}
+
+.descripcion{
+    background: url('../img/fondo.jpg') no-repeat;   
+    background-size: cover;
+    align-items: flex-end;
+    padding: 9px; 
+    display:flex;
+    height: 78vh;
+}
+
+/*INFORMACION*/
+.info{
+    margin: none;
+    font-family: 'Marcellus', serif;
+    color: #000;
+    text-decoration: none;
+}
+
+.infohotelia{
+    display:flex;
+    padding: 10%;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: none;
+}
+
+.infohotelia > p{
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 80px;
+}
+
+.hotelia--logo{
+    display: block;
+    width: 200px;
+}
+
+}
+
+
+/*RESOLUCION DESKTOP*/
+@media screen and (min-width: 1328px){
+/*IMAGENSLIDER*/
+.contendordescripcion{
+    background:rgba(0, 0, 0, 0.479) ;
+    padding: 10px 20px 30px 20px;
+    width: 100%;
+    height: 20%;
+}
+
+.imagen img{
+    height: 26rem;
+}
+
+.descrpcion--img{
+    height: 19rem;
+    opacity: 2;
+    color: #fff;
+}
+
+.descripcion{
+    background: url('../img/fondo.jpg') no-repeat;   
+    background-size: cover;
+    align-items: flex-end;
+    padding: 9px; 
+    display:flex;
+    height: 78vh;
+}
+}

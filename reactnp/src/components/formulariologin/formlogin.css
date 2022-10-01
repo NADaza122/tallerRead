@@ -1,0 +1,452 @@
+/*ESTILOS LOGIN*/
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root{
+    --azulclaro: #48D6ED;
+    --azuloscuro: rgb(51, 122, 183);
+    --azulnegro: #303342;
+    --negro: rgb(51, 51, 51);
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: rgb(21, 122, 138);
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, rgb(11, 56, 96) 80.34%);  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1,h2,h3,h4,h5{
+    font-family: 'Marcellus', serif;
+}
+
+
+/*FLEXBOX RESPONSIVE*/
+
+/*RESOLUCION MOBILE*/
+@media screen and (min-width: 320px){
+/*LOGUEO*/
+.cuerpologin{ 
+    width: 100%;
+    height: 96vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./fondologin.jpg');
+}
+
+.encabezadol{
+    overflow: hidden;
+    position: relative;
+}
+
+.icono2{
+    width: 70px;
+}
+.contenedorl{
+    border-radius: 5px;
+    width: 301px;
+    background: rgba(55, 114, 165, 0.63) ;
+    margin: 0% auto;
+    font-family: 'Marcellus', serif;
+    margin-top: 60px;
+    margin-bottom: 50px;
+    padding-bottom: 5%;
+}
+
+.btn-login{ 
+    border-radius: 3px;
+    background:#000;
+    width: 200px;
+    margin: 21px auto;
+    color: #fff;
+    font-size: 19px;
+    padding: 5px 10px;
+    font-family: 'Marcellus', serif;
+    font-weight: lighter;
+    display: block;
+}
+
+.formularioLogin a{
+    text-decoration: none;
+    color:#000;
+}
+
+
+.logol{
+    top: 11px;
+    left: 11px;
+    width: 121px;
+    position: absolute;
+}
+
+.formularioLogin{
+    color: #fff;
+    width: 200px;
+    margin: 0 auto;
+}
+
+.decoracionl{
+    background-image:url('./loginb.svg');
+    width: 215%;
+    height: 141px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -40px;
+}
+
+.atributosLogin{
+    padding: 6px;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom:20px;
+    width: 100%;
+    outline: none;
+    border:none;
+    border-radius: 2px;
+}
+
+.atributoslogin i{
+    text-decoration: none;
+    color: #000;
+}
+
+.formularioLogin p{
+    display: none;
+}
+
+.formularioLogin a{
+    display: none;
+}
+
+}
+
+
+
+/*RESOLUCION TABLET*/
+@media screen and (min-width: 768px){
+/*LOGUEO*/
+.cuerpologin{ 
+    width: 100%;
+    height: 96vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./fondologin.jpg');
+}
+
+.encabezadol{
+    overflow: hidden;
+    position: relative;
+}
+
+.icono2{
+    width: 90px;
+}
+.contenedorl{
+    border-radius: 5px;
+    width: 501px;
+    background: rgba(55, 114, 165, 0.63) ;
+    margin: 0% auto;
+    font-family: 'Marcellus', serif;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    padding-bottom: 5%;
+}
+
+.btn-login{ 
+    border-radius: 3px;
+    background:#000;
+    width: 401px;
+    margin: 21px auto;
+    color: #fff;
+    font-size: 22px;
+    padding: 5px 10px;
+    font-family: 'Marcellus', serif;
+    font-weight: lighter;
+    display: block;
+}
+
+.formularioLogin a{
+    text-decoration: none;
+    color:#000;
+}
+
+
+.logol{
+    top: 11px;
+    left: 11px;
+    width: 155px;
+    position: absolute;
+}
+
+.formularioLogin{
+    font-size: 22px;
+    margin-top: 20px;
+    color: #fff;
+    width: 401px;
+    margin: 0 auto;
+}
+
+.decoracionl{
+    background-image:url('./loginb.svg');
+    width: 215%;
+    height: 155px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -40px;
+}
+
+.atributosLogin{
+    padding: 6px;
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    outline: none;
+    border:none;
+    border-radius: 2px;
+}
+
+.atributoslogin i{
+    text-decoration: none;
+    color: #000;
+}
+
+.formularioLogin p{
+    display: none;
+}
+
+.formularioLogin a{
+    display: none;
+}
+
+}
+
+
+
+/*RESOLUCION NOTEBOOK*/
+@media screen and (min-width: 1024px){
+/*LOGUEO*/
+.cuerpologin{ 
+    width: 100%;
+    height: 96vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./fondologin.jpg');
+}
+
+.encabezadol{
+    overflow: hidden;
+    position: relative;
+}
+
+.icono2{
+    width: 130px;
+}
+.contenedorl{
+    border-radius: 5px;
+    width: 601px;
+    background: rgba(55, 114, 165, 0.63) ;
+    margin: 0% auto;
+    font-family: 'Marcellus', serif;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    padding-bottom: 5%;
+}
+
+.btn-login{ 
+    border-radius: 3px;
+    background:#000;
+    width: 501px;
+    margin: 21px auto;
+    color: #fff;
+    font-size: 30px;
+    padding: 5px 10px;
+    font-family: 'Marcellus', serif;
+    font-weight: lighter;
+    display: block;
+}
+
+.formularioLogin a{
+    text-decoration: none;
+    color:#000;
+}
+
+
+.logol{
+    top: 11px;
+    left: 11px;
+    width: 195px;
+    position: absolute;
+}
+
+.formularioLogin{
+    font-size: 30px;
+    margin-top: 20px;
+    color: #fff;
+    width: 501px;
+    margin: 0 auto;
+}
+
+.decoracionl{
+    background-image:url('./loginb.svg');
+    width: 215%;
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -40px;
+}
+
+.atributosLogin{
+    padding: 6px;
+    font-size: 30px;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    outline: none;
+    border:none;
+    border-radius: 2px;
+}
+
+.atributoslogin i{
+    text-decoration: none;
+    color: #000;
+}
+
+.formularioLogin p{
+    margin-left: 17px;
+    display: flex;
+    font-size: 27px;
+    color: rgb(255, 255, 255);
+}
+
+.formularioLogin a{
+    margin-left: 5px;
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    font-size: 27px;
+    font-weight: bold; 
+}
+
+}
+
+
+/*RESOLUCION DESKTOP*/
+@media screen and (min-width: 1328px){
+/*LOGUEO*/
+.cuerpologin{ 
+    width: 100%;
+    height: 96vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('./fondologin.jpg');
+}
+
+.encabezadol{
+    overflow: hidden;
+    position: relative;
+}
+
+.icono2{
+    width: 150px;
+}
+.contenedorl{
+    border-radius: 5px;
+    width: 701px;
+    background: rgba(55, 114, 165, 0.63) ;
+    margin: 0% auto;
+    font-family: 'Marcellus', serif;
+    margin-top: 70px;
+    margin-bottom: 40px;
+    padding-bottom: 5%;
+}
+
+.btn-login{ 
+    border-radius: 3px;
+    background:#000;
+    width: 601px;
+    margin: 21px auto;
+    color: #fff;
+    font-size: 33px;
+    padding: 5px 10px;
+    font-family: 'Marcellus', serif;
+    font-weight: lighter;
+    display: block;
+}
+
+.formularioLogin a{
+    text-decoration: none;
+    color:#000;
+}
+
+
+.logol{
+    top: 11px;
+    left: 11px;
+    width: 215px;
+    position: absolute;
+}
+
+.formularioLogin{
+    font-size: 33px;
+    margin-top: 20px;
+    color: #fff;
+    width: 601px;
+    margin: 0 auto;
+}
+
+.decoracionl{
+    background-image:url('./loginb.svg');
+    width: 215%;
+    height: 230px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: -40px;
+}
+
+.atributosLogin{
+    padding: 6px;
+    font-size: 33px;
+    color: #000000;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    width: 100%;
+    outline: none;
+    border:none;
+    border-radius: 2px;
+}
+
+.atributoslogin i{
+    text-decoration: none;
+    color: #000;
+}
+
+.formularioLogin p{
+    margin-left: 22px;
+    display: flex;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.formularioLogin a{
+    margin-left: 5px;
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    font-weight: bold; 
+}
+
+}
