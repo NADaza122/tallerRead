@@ -1,12 +1,12 @@
-.hoteliaicon{
+.hoteliaicon {
     width: 280px;
     border: none;
     border-radius: 10px;
     float: left;
-    margin-right: 20px; 
+    margin-right: 20px;
 }
 
-.bienvenida{
+.bienvenida {
     background-image: url('../../components/img/yuliya-pankevich-oyxsG2Lh_uA-unsplash.jpg');
     background-size: cover;
     grid-template-columns: 30% 70%;
@@ -15,21 +15,22 @@
     display: grid;
 }
 
-.navegabilidaddelleft{
+.navegabilidaddelleft {
     align-items: center;
     font-family: 'Marcellus', serif;
     justify-content: center;
     background: rgba(11, 56, 96, 0.74);
-    display:flex;
-    flex-direction: column;align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: 'Marcellus', serif;
     justify-content: center;
     background: rgba(11, 56, 96, 0.74);
-    display:flex;
+    display: flex;
     flex-direction: column;
 }
 
-.regis{
+.regis {
     font-family: 'Marcellus', serif;
     font-weight: 401;
     font-size: 2.5rem;
@@ -37,7 +38,7 @@
     text-align: center;
 }
 
-.tituloleft{
+.tituloleft {
     margin-top: 15px;
     text-align: center;
     width: 101px;
@@ -46,7 +47,7 @@
     font-weight: lighter;
 }
 
-.ingresarform{
+.ingresarform {
     width: 100px;
     height: 40px;
     margin: 10px 150px;
@@ -65,29 +66,20 @@
 
 
 
-.registroh input[type="text"], select{
+.registroh input[type="text"],
+select {
     font-size: 16px;
     color: #818497;
     width: 230px;
     outline: none;
-    border:none;
+    border: none;
     padding: 6px;
     border-radius: 5px;
 }
 
-.registroh input[type="password"]{
+.registroh input[type="password"] {
     border-radius: 5px;
-    border:none;
-    padding: 6px;
-    font-size: 16px;
-    color: #818497;
-    width: 230px;
-    outline: none;
-}
-
-.registroh input[type="number"]{
-    border-radius: 5px;
-    border:none;
+    border: none;
     padding: 6px;
     font-size: 16px;
     color: #818497;
@@ -95,9 +87,9 @@
     outline: none;
 }
 
-.registroh input[type="tel"]{
+.registroh input[type="number"] {
     border-radius: 5px;
-    border:none;
+    border: none;
     padding: 6px;
     font-size: 16px;
     color: #818497;
@@ -105,9 +97,9 @@
     outline: none;
 }
 
-.registroh input[type="email"]{
+.registroh input[type="tel"] {
     border-radius: 5px;
-    border:none;
+    border: none;
     padding: 6px;
     font-size: 16px;
     color: #818497;
@@ -115,9 +107,9 @@
     outline: none;
 }
 
-.registroh input[type="date"]{
+.registroh input[type="email"] {
     border-radius: 5px;
-    border:none;
+    border: none;
     padding: 6px;
     font-size: 16px;
     color: #818497;
@@ -125,9 +117,9 @@
     outline: none;
 }
 
-.registroh input[type="file"]{
+.registroh input[type="date"] {
     border-radius: 5px;
-    border:none;
+    border: none;
     padding: 6px;
     font-size: 16px;
     color: #818497;
@@ -135,29 +127,39 @@
     outline: none;
 }
 
-.fa-solid{
+.registroh input[type="file"] {
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+    font-size: 16px;
+    color: #818497;
+    width: 230px;
+    outline: none;
+}
+
+.fa-solid {
     text-decoration: none;
     color: #000;
 }
 
-.terminoycondi{
-    margin:10px auto;
-    display:block;
+.terminoycondi {
+    margin: 10px auto;
+    display: block;
     width: 301px;
 }
 
-.formularioregistro{
+.formularioregistro {
     width: 90%;
     margin: 5% 8% 5% 5%;
     background: rgba(255, 255, 255, .5);
     border-radius: 4px;
 }
 
-.atributosform{
+.atributosform {
     padding: 11px;
 }
 
-.registroh{
+.registroh {
     margin: 10px 150px;
     border-radius: 3px;
     border: none;

@@ -5,24 +5,24 @@ import Footer from '../../components/footer/Footer'
 
 
 
- function Home(){
+function Home() {
     return (
         <div>
-        <Nav
-         inicio="Inicio"
-         ubicanos="Ubicanos"
-         opiniones="Opiniones"
-         iniciosesion="Iniciar Sesion"
-        />
-        <Header />
-        
-    <Footer/>
+            <Nav
+                inicio="Inicio"
+                ubicanos="Ubicanos"
+                opiniones="Opiniones"
+                iniciosesion="Iniciar Sesion"
+            />
+            <Header />
+
+            <Footer />
         </div>
-      );
- }
+    );
+}
 
- 
 
- export default Home;
+
+export default Home;
 
 

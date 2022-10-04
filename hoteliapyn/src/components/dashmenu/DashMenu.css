@@ -1,14 +1,16 @@
-.imagenes_320{
+.imagenes_320 {
     display: grid;
     gap: 2rem;
 }
-.imagenes_320 img{
+
+.imagenes_320 img {
     margin-top: -1rem;
-   height: 30px;
-   width: 30px;
-   border-radius: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 5px;
 }
-.habitaciones{
+
+.habitaciones {
     display: flex;
     flex-direction: column;
     font-size: 1.5rem;
@@ -16,17 +18,17 @@
     width: 100%;
 }
 
-.reservas,.cerrarse{
+.reservas,
+.cerrarse {
     display: flex;
     justify-content: center;
 }
 
- .reservas:hover{
-        
+.reservas:hover {
+
     background-color: #135c9c;
 }
 
-.cerrarse:hover{
+.cerrarse:hover {
     background-color: #135c9c;
 }
-

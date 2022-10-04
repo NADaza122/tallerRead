@@ -1,4 +1,4 @@
-:root{
+:root {
     --azulclaro: #48D6ED;
     --azuloscuro: #337AB7;
     --azulnegro: #303342;
@@ -10,55 +10,61 @@
     --Magenta: #9C2759;
     --blanco: #fff;
     --degradado: linear-gradient(49.54deg, #337AB7 2.89%, #0B3860 80.34%);
-  }
-  
-*{
+}
+
+* {
     padding: 0;
     margin: 0;
     font-family: 'Marcellus', serif;
 }
 
-.logo{
+.logo {
     background-color: var(--negro2);
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 1rem;
 }
-.logo img{
+
+.logo img {
     width: 40%;
-    max-width: 200px;   
+    max-width: 200px;
 }
-.logo i{
+
+.logo i {
     color: var(--blanco);
     font-size: 2rem;
 }
-.menu{
+
+.menu {
     background-color: rgba(1, 10, 52, 0.838);
     opacity: 0.90;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
 }
-.menu-hr{
+
+.menu-hr {
     width: 90%;
     background-color: var(--blanco);
 }
-.item{
-padding: 1rem;
+
+.item {
+    padding: 1rem;
 }
-nav a{
+
+nav a {
     color: var(--blanco);
     text-decoration: none;
     text-align: center;
     margin: 10px;
-    }
+}
 
 
 
-.navbar-button{
-    background-color:transparent;
+.navbar-button {
+    background-color: transparent;
     border: none;
     margin-top: -2px;
     border-radius: 3px;
@@ -66,11 +72,11 @@ nav a{
     padding: 0.5rem;
     font-family: 'Marcellus', serif;
     color: var(--blanco);
-    }   
+}
 
-@media screen and (min-width: 1024px){
-    
-    .navIndex{
+@media screen and (min-width: 1024px) {
+
+    .navIndex {
         display: flex;
         flex-direction: row;
         width: 100%;
@@ -78,32 +84,32 @@ nav a{
         background-color: var(--negro2);
     }
 
-    .logo{
+    .logo {
         padding: 1rem;
     }
 
-    .logo img{
+    .logo img {
         width: 100%;
-        max-width: 180px;       
+        max-width: 180px;
     }
 
-    .logo i{ 
+    .logo i {
         display: none;
-    } 
+    }
 
-    .menu{
+    .menu {
         background-color: var(--negro2);
         display: flex;
         flex-direction: row;
         align-items: center;
     }
 
-    .menu-hr{ 
+    .menu-hr {
         display: none;
     }
 
-    .navbar-button{
-        background-color:var(--azuloscuro);
-    }  
+    .navbar-button {
+        background-color: var(--azuloscuro);
+    }
 
 }

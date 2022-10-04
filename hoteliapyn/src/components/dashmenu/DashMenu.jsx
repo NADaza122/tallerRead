@@ -1,7 +1,7 @@
 import './DashMenu.css';
 
 import Hotelia from '../img/Hotelia horizontal blanco.svg';
-import Angie from '../img/Angie Vargas.png'
+import Perfil2 from '../img/perfil2.png'
 
 
 function DashMenu() {
@@ -14,7 +14,7 @@ function DashMenu() {
                 </div>
                 <div class="imagenes_320">
                     <img src={Hotelia} alt="" />
-                    <img class="img-Angie" src={Angie} alt="" />
+                    <img class="img-Perfil2" src={Perfil2} alt="" />
                 </div>
                 <div class="datos-dash">
                     <h3>Angie Vargas</h3>
@@ -27,15 +27,15 @@ function DashMenu() {
                     <p>Habitaciones</p>
                 </div>
                 <div class="reservas">
-                <i class="fa-solid fa-bell-concierge"></i>
+                    <i class="fa-solid fa-bell-concierge"></i>
                     <p>Reservas</p>
                 </div>
                 <div class="reservas">
-                <i class="fa-solid fa-bed"></i>
+                    <i class="fa-solid fa-bed"></i>
                     <p>Habitaciones</p>
                 </div>
                 <div class="reservas">
-                <i class="fa-solid fa-bell-concierge"></i>
+                    <i class="fa-solid fa-bell-concierge"></i>
                     <p>Habitaciones</p>
                 </div>
             </div>
@@ -45,9 +45,9 @@ function DashMenu() {
                 <p>Cerrar sesión</p>
             </div>
         </div>
-  
+
     );
-    
+
 
 }
 export default DashMenu;
