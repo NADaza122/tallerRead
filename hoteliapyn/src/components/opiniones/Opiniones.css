@@ -1,0 +1,150 @@
+.encabezadocomen {
+    padding: 10px;
+    background-color: #121212;
+    width: 100%;
+    height: 30vh;
+}
+
+.perfilescomen {
+    height: 40px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.nombreh {
+    margin-left: 8px;
+    font-size: 15px;
+}
+
+.comen {
+    border-radius: 2px;
+    width: 100%;
+    background-image: url('../img/Group\ 200.svg');
+    background-repeat: no-repeat;
+    z-index: 2;
+    height: auto;
+    background-color: var(--azuloscuro);
+    padding: 50px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.huespedcomen {
+    border-radius: 35%;
+    width: 80px;
+}
+
+.brevedescrp {
+    margin: 20px;
+    font-size: 15px;
+}
+
+.estrellas {
+    margin-left: 10px;
+}
+
+#valoracionestrella {
+    color: rgb(124, 34, 124);
+}
+
+.estrellas i {
+    color: #303030;
+}
+
+.calificaciones {
+    flex-direction: column;
+    height: auto;
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.titulocomentarios {
+    color: #fff;
+    margin: 30px 0;
+    font-size: 2rem;
+    font-family: 'Marcellus' serif;
+    text-align: center;
+}
+
+.slide {
+    background-color: none;
+    position: relative;
+    top: 20%;
+    height: 50px;
+}
+
+.slide-inner {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc(300px + 3em);
+}
+
+.slide-open:checked+.slide-item {
+    position: static;
+    opacity: 100;
+}
+
+.slide-item {
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: opacity 0.6s ease-out;
+    transition: opacity 0.6s ease-out;
+}
+
+
+.slide-control.prev {
+    left: 2%;
+}
+
+.slide-control.next {
+    right: 2%;
+}
+
+.slide-control:hover {
+    background: rgba(139, 139, 139, 0.8);
+    color: #aaaaaa;
+}
+
+#slide-1:checked~.control-1,
+#slide-2:checked~.control-2,
+#slide-3:checked~.control-3 {
+    display: block;
+}
+
+.slide-indicador {
+    background-color: none;
+    list-style: none;
+    top: 65%;
+    margin: 5px;
+    padding: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 10;
+}
+
+.slide-indicador li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slide-circulo {
+    color: #828282;
+    cursor: pointer;
+    display: block;
+    font-size: 60px;
+}
+
+.slide-circulo:hover {
+    color: #aaaaaa;
+}
+
+#slide-1:checked~.control-1~.slide-indicador li:nth-child(1) .slide-circulo,
+#slide-2:checked~.control-2~.slide-indicador li:nth-child(2) .slide-circulo,
+#slide-3:checked~.control-3~.slide-indicador li:nth-child(3) .slide-circulo {
+    color: rgba(61, 61, 61, 0.8);
+}

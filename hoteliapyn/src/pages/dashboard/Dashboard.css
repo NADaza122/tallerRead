@@ -1,0 +1,408 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus&family=Playfair+Display:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap');
+
+:root {
+    --azulclaro: #48D6ED;
+    --azuloscuro: rgb(51, 122, 183);
+    --azulnegro: #303342;
+    --negro: rgb(51, 51, 51);
+    --negro2: #000;
+    --gris: #B2B3B3;
+    --fondo: #FFFEFC;
+    --verdeazul: rgb(21, 122, 138);
+    --Magenta: #9C2759;
+    --blanco: #fff;
+    --degradado: linear-gradient(49.54deg, #337AB7 2.89%, rgb(11, 56, 96) 80.34%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Marcellus', serif;
+}
+
+
+.datoshuesped input[type="text"],
+select {
+    font-size: 16px;
+    color: #818497;
+    width: 230px;
+    outline: none;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+
+.datoshuesped input[type="number"] {
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+    font-size: 16px;
+    color: #818497;
+    width: 230px;
+    outline: none;
+}
+
+.datoshuesped input[type="tel"] {
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+    font-size: 16px;
+    color: #818497;
+    width: 230px;
+    outline: none;
+}
+
+.datoshuesped input[type="email"] {
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+    font-size: 16px;
+    color: #818497;
+    width: 230px;
+    outline: none;
+}
+
+.accionesh {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.accionesh i {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.contendorpadreH {
+    background-image: url('../../components/img/shop-slo-vhztm9QC0L0-unsplash.jpg');
+    background-repeat: no-repeat;
+    grid-template-columns: 20% auto;
+    background-size: 100% 100%;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+}
+
+.accioneslat {
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contentHuesped {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.infohuesped {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, .8);
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 10% auto;
+    width: 90%;
+    height: 90%;
+}
+
+.infohuesped h1 {
+    text-align: center;
+    grid-column: 1/ 3;
+}
+
+.datoshuesped {
+    column-gap: 20px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 45% auto;
+    padding: 0 0 20px 0;
+    margin-left: 25px;
+    width: 100%;
+}
+
+.contenedorlateral {
+    background-color: var(--azulnegro);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logolhot {
+    background-image: url('../../components/img/Group\ 200.svg');
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.logolhot a {
+    font-size: 1.3em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.salirl {
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #1c1e27;
+}
+
+.cambiocontrasena {
+    grid-template-columns: 45% auto;
+    column-gap: 20px;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    margin-left: 20px;
+}
+
+.cambiocontrasena input[type="password"] {
+    border-radius: 5px;
+    border: none;
+    padding: 6px;
+    font-size: 16px;
+    color: #818497;
+    width: 230px;
+    outline: none;
+}
+
+.cambiocontrasena label {
+    color: #000;
+}
+
+.datoshuesped label {
+    color: #000;
+}
+
+.editar {
+    background: #000;
+    height: 40px;
+    border-radius: 3px;
+    border: none;
+    font-size: 18px;
+    padding: 5px;
+    display: block;
+    width: 180px;
+    margin: 0px auto;
+    margin-left: 5px;
+    font-family: 'Marcellus', serif;
+    font-weight: lighter;
+    color: #fff;
+}
+
+.accioneshuespedfoto {
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: var(--azuloscuro);
+    color: #fff;
+    display: flex;
+    flex-direction: row;
+    margin: 5px 0;
+}
+
+.accioneshuespedfoto i {
+    margin: 5px 10px;
+    font-size: 1.8rem;
+}
+
+.CambiarContr {
+    font-size: 1.2em;
+    margin-left: 1px;
+    width: 100%;
+    color: #fff;
+    height: 60px;
+    font-weight: lighter;
+    padding: 10px;
+    display: block;
+    background: rgb(41, 43, 44);
+    border-radius: 3px;
+    border: none;
+}
+
+.infopersonalhuesped {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto;
+    height: 100%;
+    padding: 10px;
+    grid-template-rows: auto auto;
+}
+
+
+/*LISTADO HABITACIONES*/
+.accioneshh {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.accioneshh i {
+    margin-left: 10px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.contendorprinci {
+    background-image: none;
+    background-repeat: no-repeat;
+    grid-template-columns: 20% auto;
+    background-size: 100% 100%;
+    display: grid;
+    width: 100%;
+    height: 100vh;
+}
+
+.contentHuespedd {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+
+.infohuespedd {
+    padding: 30px;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: grid;
+    grid-template-columns: 20% auto;
+    grid-template-rows: 10% auto;
+    width: 100%;
+    height: 173vh;
+}
+
+.infohuespedd h1 {
+    text-align: center;
+    grid-column: 1/ 3;
+}
+
+.accioneslatt {
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.accioneslatt a {
+    font-size: 15px;
+}
+
+.salirll a {
+    font-size: 15px;
+}
+
+.contenedorlaterall {
+    background-color: var(--azulnegro);
+    backdrop-filter: blur(5px);
+    width: 100%;
+    height: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.logolhott {
+    background-image: url('../../components/img/Group\ 200.svg');
+    background-size: cover;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    padding: 20px 0;
+    color: #fff;
+}
+
+.logolhott a {
+    font-size: 1.em;
+    text-decoration: none;
+    color: #fff;
+}
+
+.salirll {
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    background-color: #1c1e27;
+}
+
+.salirlll {
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+    width: 755px;
+    height: 20px;
+    display: flex;
+    margin-left: 0%;
+    margin-right: 0%;
+    background: rgba(77, 72, 72, 0.603);
+}
+
+.salirlll select {
+    margin-left: 5px;
+    font-size: 16px;
+    color: #000000;
+    width: 200px;
+    outline: none;
+    border: none;
+    padding: 6px;
+    border-radius: 5px;
+}
+
+.seleccion {
+    margin-left: 8px;
+}
+
+.foto {
+    width: 100px;
+}
+
+.fotol {
+    width: 80px;
+    border-radius: 5px;
+}
+
+.logo1 {
+    width: 150px;
+}
