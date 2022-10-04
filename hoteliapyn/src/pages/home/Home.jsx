@@ -12,7 +12,7 @@ function Home() {
                 inicio="Inicio"
                 ubicanos="Ubicanos"
                 opiniones="Opiniones"
-                iniciosesion="Iniciar Sesion"
+                iniciosesion="Iniciar Sesión"
             />
             <Header />
 
